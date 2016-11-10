@@ -21,8 +21,11 @@ nosetests malisa_nosetests/
 This will run tests for the following graph:
 
 Batch Payments:
+
 ![batch-payments-test](/images/malisa_test_graph.png)
+
 Streaming Payments (alphabetical ordering on edges indicate order of payments):
+
 ![streaming-payments-test](/images/malisa_test_graph_with_streaming.png)
 
 GraphViz input (if recreation of graph is desired):
