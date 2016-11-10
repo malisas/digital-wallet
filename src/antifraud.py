@@ -12,7 +12,6 @@ new transaction, it prints "unverified" or "trusted" to the
 appropriate output file, based on whether the two user Ids involved in
 the transaction are in the same network (i.e. > 1, > 2, or > 4 degrees
 apart).
-
 """
 
 import os
@@ -23,9 +22,9 @@ import sys
 # Searches outwards from both nodes (taking turns) instead of just searching in one direction. This is much faster.
 def findDegreeApart(userDict, forwardCurrentIds, forwardPrevIds, backwardCurrentIds, backwardPrevIds, degree):
     if degree == 5:
-        # Re've reached a base case. return degree
+        # We've reached a base case. return degree
         return degree
-    # Rf the degree is odd, search outwards from the forward-facing nodes
+    # If the degree is odd, search outwards from the forward-facing nodes
     elif degree % 2 == 1:
         newIds = set()
         for id in forwardCurrentIds:
