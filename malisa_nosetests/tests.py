@@ -97,8 +97,6 @@ def test_streaming_transactions():
     userDict = {}
     antifraud.storeBatchPayments(userDict, batchPayments)
 
-    #print(userDict)
-
     # initialize the 3 output files
     output1 = open(os.path.join(os.path.split(scriptDir)[0], "test_output1.txt"), 'w')
     output2 = open(os.path.join(os.path.split(scriptDir)[0], "test_output2.txt"), 'w')
